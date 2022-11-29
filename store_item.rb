@@ -4,3 +4,8 @@
 #puts items
 
 # Using Classes
+class StoreItem
+class initialize(item_name, item_color, item_price, item_material)
+@name = item_name
+end
+end
