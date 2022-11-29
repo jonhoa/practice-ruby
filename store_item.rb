@@ -5,7 +5,33 @@
 
 # Using Classes
 class StoreItem
-class initialize(item_name, item_color, item_price, item_material)
-@name = item_name
+   def initialize(item_name, item_color,item_price, item_material)
+     @name = item_name
+     @color = item_color
+     @price = item_price
+     @material = item_material
+   end
+  
+   def name
+    @item_name
+   end
+
+   def color
+     @item_color
+   end
+
+    def price
+      @item_price
+    end
+
+    def material
+        @item_material
+    end
+
+    def info
+      puts name
 end
-end
+
+
+store = StoreItem.new("Crowbar", "Blue", 50, "Plastic")
+store.info
